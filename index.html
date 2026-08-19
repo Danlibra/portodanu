@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bagus Danu - portfolio">
+  <title>Bagus Danu | IT Monitoring & Security Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span>&lt;/&gt;</span> Bagus Danu</a>
+    <nav>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SYSTEM ONLINE // IT ENGINEERING</p>
+        <h1>Hi, I'm <span>Bagus Danu</span></h1>
+        <h2>IT Monitoring &amp; Security Engineer</h2>
+        <p class="lead">I implemetn, troubleshoot, and optimize IT infrastructure.</p>
+        <p class="typing"><span id="typed"></span><span class="cursor">|</span></p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View My Work ↗</a>
+          <a class="btn" href="#contact">Let's Connect</a>
+        </div>
+      </div>
+
+      <div class="terminal reveal">
+        <div class="term-top"><i></i><i></i><i></i><span>bagusdanu486@gmail.com:~</span></div>
+        <div id="terminalBody" class="term-body"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-title"><span>01</span><h2>About Me</h2></div>
+      <div class="about-grid">
+        <div class="card about-card">
+          <p>I'm an IT professional focused on implementing, and technical troubleshooting.</p>
+          <p>I enjoy turning complex infrastructure problems into practical, reliable solutions.</p>
+          <div class="stats">
+            <div><strong>15+</strong><small>Projects</small></div>
+            <div><strong>5+</strong><small>Technologies</small></div>
+            <div><strong>24/7</strong><small>Mindset</small></div>
+          </div>
+        </div>
+        <div class="card code-card">
+<pre><code><span class="purple">const</span> engineer = {
+  role: <span class="green">"Post Sales Engineer"</span>,
+  focus: [<span class="green">"Monitoring"</span>, <span class="green">"Security"</span>],
+  stack: [<span class="green">"SolarWinds"</span>, <span class="green">"AlgoSec"</span>,
+          <span class="green">"Gigamon"</span>, <span class="green">"Zscaler"</span>],
+  mindset: <span class="green">"learn → build → automate"</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-title"><span>02</span><h2>Technical Skills</h2></div>
+      <div class="skills-grid">
+        <div class="skill"><div><b>SolarWinds</b><span>78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+        <div class="skill"><div><b>Network Security</b><span>45%</span></div><div class="bar"><i style="--w:45%"></i></div></div>
+        <div class="skill"><div><b>AlgoSec</b><span>65%</span></div><div class="bar"><i style="--w:65%"></i></div></div>
+        <div class="skill"><div><b>Linux</b><span>55%</span></div><div class="bar"><i style="--w:55%"></i></div></div>
+        <div class="skill"><div><b>Gigamon</b><span>57%</span></div><div class="bar"><i style="--w:57%"></i></div></div>
+        <div class="skill"><div><b>Windows / SQL</b><span>53%</span></div><div class="bar"><i style="--w:53%"></i></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-title"><span>03</span><h2>Featured Projects</h2></div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="monitoring">Monitoring</button>
+        <button class="filter" data-filter="security">Security</button>
+        <button class="filter" data-filter="network">Network</button>
+      </div>
+      <div class="projects">
+        <article class="project card" data-category="monitoring">
+          <div class="project-icon">◉</div><span class="tag">MONITORING</span>
+          <h3>SolarWinds Monitoring</h3>
+          <p>Infrastructure monitoring implementation using Orion modules such as NPM, SAM, NTA, DPA and LA.</p>
+          <div class="chips"><span>NPM</span><span>SAM</span><span>DPA</span><span>NTA</span></div>
+        </article>
+        <article class="project card" data-category="security">
+          <div class="project-icon">◇</div><span class="tag">SECURITY</span>
+          <h3>AlgoSec Firewall Automation</h3>
+          <p>Firewall policy management, risk analysis and change automation across enterprise environments.</p>
+          <div class="chips"><span>ASMS</span><span>AFA</span><span>AFF</span><span>FireFlow</span></div>
+        </article>
+        <article class="project card" data-category="network">
+          <div class="project-icon">⌁</div><span class="tag">NETWORK</span>
+          <h3>Gigamon Visibility</h3>
+          <p>Network traffic visibility, filtering and monitoring using Gigamon TAP and visibility solutions.</p>
+          <div class="chips"><span>GigaVUE</span><span>TA Series</span><span>HC Series</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="section-title"><span>04</span><h2>Experience</h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="year">2024 — PRESENT</span><div><h3>Post Sales Engineer</h3><p class="company">Westcon Comstor</p><p>Solution implementation, technical troubleshooting, lab setup, testing, proof of concept and network/security deployment.</p></div></div>
+        <div class="timeline-item"><span class="year">PREVIOUS</span><div><h3>IT / Technical Support</h3><p>Infrastructure support, system monitoring, network troubleshooting and customer technical assistance.</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="section-title"><span>05</span><h2>Let's Work Together</h2></div>
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <p class="lead">Have an interesting project, technical challenge, or collaboration?</p>
+          <p>Let's build something reliable and secure.</p>
+          <div class="contact-line">✉ <span>bagusdanu486@gmail.com</span></div>
+          <div class="contact-line">⌖ <span>Indonesia</span></div>
+        </div>
+        <form class="card contact-form" onsubmit="return false">
+          <input placeholder="Your Name" aria-label="Your Name">
+          <input type="email" placeholder="Your Email" aria-label="Your Email">
+          <textarea placeholder="Your Message" aria-label="Your Message"></textarea>
+          <button class="btn primary" id="sendBtn">Send Message ↗</button>
+          <small id="formStatus"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Bagus Danu · Built with <span>HTML · CSS · JavaScript</span></footer>
+  <button id="topBtn" class="top-btn">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
